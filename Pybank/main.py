@@ -2,7 +2,7 @@ import csv
 import os
 from collections import defaultdict
 #Set path for file
-csvpath =os.path.join("..","Resources","budget_data.csv")
+csvpath =os.path.join("Resources","budget_data.csv")
 #open file
 columns = defaultdict(list) # each value in each column is appended to a list
 with open(csvpath,newline='') as budget:
@@ -70,7 +70,7 @@ with open(csvpath,newline='') as budget:
    # print("check profit/loss Jan amount   " + str(ptotal))
 
 # Specify the file to write to
-output_path = os.path.join("..", "Resources", "analysis_paybank.txt")
+output_path = os.path.join("Analysis", "analysis_paybank.txt")
 
 with open(output_path,'w', newline='') as file:
 
